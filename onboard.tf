@@ -30,7 +30,7 @@ resource "tfe_team_organization_member" "test" {
 
 resource "tfe_variable" "gcp_project" {
   key          = "gcp_project"
-  value        = "my_value_name"
+  value        = var.gcp_project
   category     = "terraform"
   workspace_id = $tfe_workspace.demoWorkspace.id
   description  = "GCP Project from Instruqt"
