@@ -20,7 +20,7 @@ resource "tfe_team" "demoTeam" {
 
 resource "tfe_organization_membership" "test" {
   organization = tfe_organization.demoOrg.id
-  email = tfe_organization.demoOrg.org-email
+  email = var.org-email
 }
 
 resource "tfe_team_organization_member" "test" {
