@@ -32,7 +32,7 @@ resource "tfe_variable" "gcp_project" {
   key          = "gcp_project"
   value        = var.gcp_project
   category     = "terraform"
-  workspace_id = $tfe_workspace.demoWorkspace.id
+  workspace_id = tfe_workspace.demoWorkspace.id
   description  = "GCP Project from Instruqt"
 }
 
@@ -41,6 +41,6 @@ resource "tfe_variable" "google_creds" {
   value        = "my_value_name"
   category     = "env"
   sensitive    = "true"
-  workspace_id = $tfe_workspace.demoWorkspace.id
+  workspace_id = tfe_workspace.demoWorkspace.id
   description  = "GCP Credentials"
 }
