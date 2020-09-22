@@ -4,7 +4,7 @@ variable "hostname" {
 }
 
 variable "token" {
-  description = "TFE hostname or app.terraform.io"
+  description = "TFC Token"
 }
 
 variable "org-name" {
