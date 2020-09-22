@@ -4,7 +4,6 @@ variable "hostname" {
 }
 
 variable "token" {
-  default = "jlinn@hashicorp.com"
   description = "TFE hostname or app.terraform.io"
 }
 
